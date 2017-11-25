@@ -55,8 +55,9 @@ public class Main {
         }
         long elapsedTime = System.nanoTime() - startTime;
       
-        System.out.println(" Avg. time to sort length " + l +" vector: "
-                + (elapsedTime/1000000 ) /NTIME + "[milliSecond]");
+        // nano: 10^-9
+        // Micro: 10^-6
+        // Milli: 10^-3
         System.out.println(" Avg. time to sort length " + l +" vector: "
                 + (elapsedTime/1000 ) /NTIME + "[microSecond]");
         
