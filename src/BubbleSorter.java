@@ -8,7 +8,10 @@ public class BubbleSorter {
         
         
         // Bublle the largest to the last spot
-        for (int ii=A.length; ii>0 ; --ii)
+        // Add the changeMade flag only later on in the explanation
+        boolean changeMade = true;
+        for (int ii=A.length; ii>0 && changeMade; --ii) {
+            changeMade = false;
             for (int jj=0; jj<ii-1; ++jj )
                 if (A[jj] > A[jj+1])
                 {
@@ -16,7 +19,10 @@ public class BubbleSorter {
                     int tmp = A[jj+1];
                     A[jj+1] = A[jj];
                     A[jj] = tmp;
+                    
+                    changeMade = true;
                 }
+        }
     }
 
     public void printArray(String msg, int[] A) {
