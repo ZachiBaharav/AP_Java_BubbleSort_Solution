@@ -10,6 +10,10 @@ Talk about:
   Time requirements: O(N^2)
   Best/worst case: Random, descendent, ascendent, large/small data set
   Loop invariants
+
+
+Use Desmos to plot result.
+Then, fir it with a y=ax^2+bx+c and sliders.
  */
 
 
